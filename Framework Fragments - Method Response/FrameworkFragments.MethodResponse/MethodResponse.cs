@@ -1,9 +1,9 @@
 ﻿#nullable enable
 using System.Collections.Generic;
-using Smelter.Common.Error;
-using Smelter.Common.Validation;
+using FrameworkFragments.Error;
+using FrameworkFragments.Validation;
 
-namespace Smelter.Common.MethodResponse
+namespace FrameworkFragments.MethodResponse
 {
     internal abstract class MethodResponse
     {

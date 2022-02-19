@@ -1,4 +1,4 @@
-﻿namespace Smelter.Common.MethodResponse
+﻿namespace FrameworkFragments.MethodResponse.Fetch
 {
     public interface IFetchResponse : IMethodResponse
     {

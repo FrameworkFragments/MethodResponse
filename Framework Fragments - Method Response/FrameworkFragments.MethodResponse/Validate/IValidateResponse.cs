@@ -1,4 +1,4 @@
-﻿namespace Smelter.Common.MethodResponse
+﻿namespace FrameworkFragments.MethodResponse.Validate
 {
     public interface IValidateResponse: IMethodResponse
     {
