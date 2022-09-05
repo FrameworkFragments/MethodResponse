@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Authors>Adam Lenda</Authors>
+    <AssemblyName>FrameworkFragments.MethodResponse</AssemblyName>
+    <AssemblyVersion>0.2.1</AssemblyVersion>
+    <Company>FrameworkFragments</Company>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <IsPackable>True</IsPackable>
+    <LangVersion>latestmajor</LangVersion>
+    <NeutralLanguage>en</NeutralLanguage>
+    <Nullable>enable</Nullable>
+    <OutputType>Library</OutputType>
+    <PackageDescription>Provides the IMethodResponse and MethodResponse with associated interfaces and types. This package depends on FrameworkFragments.Validation.</PackageDescription>
+    <PackageId>FrameworkFragments.MethodResponse</PackageId>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/FrameworkFragments/MethodResponse</RepositoryUrl>
+    <TargetFramework>net6.0</TargetFramework>
+    <Title>Framework Fragments Method Response Library</Title>
+    <Version>0.2.1</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="FrameworkFragments.ErrorInfo">
+      <HintPath>..\..\..\ErrorInfo\Source\FrameworkFragments.ErrorInfo\bin\Debug\net6.0\FrameworkFragments.ErrorInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="FrameworkFragments.Validation">
+      <HintPath>..\..\..\Validation\Source\FrameworkFragments.Validation\bin\Debug\net6.0\FrameworkFragments.Validation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
