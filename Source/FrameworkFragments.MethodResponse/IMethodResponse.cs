@@ -1,18 +1,27 @@
-﻿using System;
-using FrameworkFragments.ErrorInfo;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace FrameworkFragments.MethodResponse;
 
-public interface IMethodResponse<TOutcomeType> where TOutcomeType : Enum
+public interface IMethodResponse<TMethodOutcomeType>: IEquatable<TMethodOutcomeType>
+  where TMethodOutcomeType : struct, Enum, IComparable
 {
-  public TOutcomeType Outcome { get; }
+  TMethodOutcomeType Outcome { get; }
+  public IEnumerable<string> MessageCodes { get; }
 
-  public bool IsError => null != ErrorInfo;
-
-  public IErrorInfo? ErrorInfo { get; }
-
-  public bool Is(TOutcomeType outcomeType)
+  public bool Is(TMethodOutcomeType other)
   {
-    return 0 == Outcome.CompareTo(outcomeType);
+    return 0 == Outcome.CompareTo(other);
+  }
+  
+  public bool IsNot(TMethodOutcomeType other)
+  {
+    return 0 == Outcome.CompareTo(other);
+  }
+
+  public bool IsIn(IEnumerable<TMethodOutcomeType> outcomeTypes)
+  {
+    return outcomeTypes.Any(Is);
   }
 }

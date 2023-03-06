@@ -5,8 +5,6 @@ VisualStudioVersion = 16.0.31019.35
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrameworkFragments.MethodResponse", "FrameworkFragments.MethodResponse\FrameworkFragments.MethodResponse.csproj", "{B459BF82-37C9-47E7-B3A0-78D85A35650D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrameworkFragments.MethodResponse.Test", "FrameworkFragments.MethodResponse.Test\FrameworkFragments.MethodResponse.Test.csproj", "{591C1299-1DBF-40CA-B1C6-0B38A679EA2B}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{B459BF82-37C9-47E7-B3A0-78D85A35650D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B459BF82-37C9-47E7-B3A0-78D85A35650D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B459BF82-37C9-47E7-B3A0-78D85A35650D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{591C1299-1DBF-40CA-B1C6-0B38A679EA2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{591C1299-1DBF-40CA-B1C6-0B38A679EA2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{591C1299-1DBF-40CA-B1C6-0B38A679EA2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{591C1299-1DBF-40CA-B1C6-0B38A679EA2B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
